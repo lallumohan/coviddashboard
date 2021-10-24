@@ -1,0 +1,80 @@
+.svgLoader {
+  animation: spin 0.5s linear infinite;
+  margin: auto;
+}
+.divLoader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table-responsive {
+  height: 500px;
+  overflow: scroll;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+thead tr:nth-child(1) th {
+  background: rgb(139, 172, 134);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+tr:hover {
+  background-color: I#ffa;
+}
+
+td:hover::after,
+th:hover::after {
+  content: "";
+
+  position: absolute;
+
+  background-color: #f2f2f2;
+}
+
+.table tr td:hover {
+  background-color: rgb(117, 223, 122);
+  color: rgb(20, 66, 107);
+  border: 0.5px solid Orgb(12, 12, 12);
+}
+
+.table tr td:hover:nth-child(5) {
+  background-color: rgb(231, 83, 115);
+  color: aliceblue;
+  border: 0.5px solid Orgb(12, 12, 12);
+}
+
+.container-fluid {
+  width: 90%;
+
+  margin: auto;
+}
