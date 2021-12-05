@@ -4,7 +4,7 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 thead tr:nth-child(1) th {
-  background: rgb(124, 16, 146);
+  background: rgb(203, 145, 214);
   position: sticky;
   top: 0;
   z-index: 10;

@@ -1,22 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
-.table-responsive {
+
+ 
+  .table-responsive {
     height: 500px;
     overflow: scroll;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  }
-  thead tr:nth-child(1) th {
-    background: rgb(52, 224, 30);
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  
   }
   
+
+
+ 
+
+
+  
+/*
+   .table  tbody td  {
+    padding-left: 0px;
+   
+    
+  }
+ */
+  
+  .table  thead th  {
+    /*white-space: nowrap;*/
+   
+    
+  }
+
+  #ico
+  {
+   
+  }
+
+
+ 
+  tbody td:first-child {
+    background: #fff;
+    left: -0.0605rem;
+    position: sticky;
+    z-index: 2;
+  
+  }
+
+  
+
+  thead tr:nth-child(1) th {
+    background: #fff;
+    border-top: 1px;
+    position: sticky;
+    top: -1px;;
+    z-index:3;
+  }
+  
+
+
+  thead tr th:first-child
+  {left:0;
+  position: sticky;
+   z-index: 4;
+   background: #fff;
+   
+  }
   tr:hover {
     background-color: I#ffa;
   }
   
+  .search-wrap
+  {
+    display:flex;
+    justify-content: center;
+  }
   
-  
+  .search-wrap input[type=text]
+  {
+    width: 50%;
+  }
+
   
   
   .table tr td:hover {

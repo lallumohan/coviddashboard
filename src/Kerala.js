@@ -48,11 +48,8 @@ export default class India extends Component {
     if (arrInStr === arrInStr1) {
       arrayCopy.sort(this.compareByDesc(key));
     }
-    
     this.setState({ TestData : arrayCopy });
   }
-
-
 
   filterList = (event) => {
     var updatedList = this.state.StateData;
@@ -73,7 +70,7 @@ export default class India extends Component {
     var data = this.state.StateData[36];
      //if (data == null) return (<div> Loading</div> );
     var stat = this.state.StateData.filter((itm, ky) => ky < 36)
-    console.log(this.state.TestData)
+    
     this.state.TestData.filter((itm, ky) => ky < 36).forEach(statename => {
       statename.new_positive =  parseInt(statename.new_positive)
       statename.positive =  parseInt(statename.positive)

@@ -22,7 +22,7 @@ function App() {
     return (
         <div>
             <Router>
-               {/* <Header/>  */} 
+                <Header/> 
                 <Switch>
                   <Route exact path="/">
                       <Cards/>
