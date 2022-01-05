@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import moment from "moment";
-import  './vaccine.css'
+//import  './vaccine.css'
 
 const Loader = () => (
   <div class="divLoader">
@@ -137,8 +137,8 @@ export default class Vaccine extends Component {
             </table>
           </div>
   
-          gggh
           
+    
           
         </div>
       </div>

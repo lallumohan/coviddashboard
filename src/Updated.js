@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import './Updated.css';
+//import './Updated.css';
 export default class Updated extends Component {
   constructor(props) {
     super(props);

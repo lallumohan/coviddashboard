@@ -25,7 +25,7 @@ function App() {
                 <Header/> 
                 <Switch>
                   <Route exact path="/">
-                      <Cards/>
+                      
                       <India/>
                    </Route>
                   <Route path="/india">

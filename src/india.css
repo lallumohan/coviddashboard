@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
  
   .table-responsive {
@@ -53,15 +54,59 @@
     z-index:3;
   }
   
-
-
   thead tr th:first-child
+  {left:0;
+  position: sticky;
+   z-index: 4;
+   background: #c4c4c5;
+   
+  }
+  thead tr th:nth-child(2)
+  {left:0;
+  position: sticky;
+   z-index: 3;
+   background: #e2c7fe;
+   
+  }
+  thead tr th:nth-child(3)
+  {left:0;
+  position: sticky;
+   z-index: 3;
+   background: #ffdabb;
+   
+  }
+
+  thead tr th:nth-child(4)
+  {left:0;
+  position: sticky;
+   z-index: 3;
+   background: #d3e1ff;
+   
+  }
+  thead tr th:nth-child(5)
+  {left:0;
+  position: sticky;
+   z-index: 3;
+   background: #a2eea8;
+   
+  }
+
+  thead tr th:nth-child(6)
+  {left:0;
+  position: sticky;
+   z-index: 3;
+   background: #fec1cb;
+   
+  }
+
+  /*thead tr th:first-child
   {left:0;
   position: sticky;
    z-index: 4;
    background: #fff;
    
   }
+  */
   tr:hover {
     background-color: I#ffa;
   }
@@ -95,4 +140,54 @@
     width: 90%;
   
     margin: auto;
+  }
+
+
+  .live-indicator-wrapper {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+.pulse {
+    margin:10px;
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #dc3545;
+    cursor: pointer;
+    box-shadow: 0 0 0 #dc3545;
+    animation: pulse 1s infinite;
+  }
+  
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 #dc3545;
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 #dc3545;
+      box-shadow: 0 0 0 0 #dc3545;
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
   }

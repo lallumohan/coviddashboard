@@ -47,7 +47,8 @@ export default class World extends Component {
               <thead>
                 <tr className="text-center">
                   <th>Country</th>
-                  <th>Total cases</th>
+                  <th>New Cases</th>
+                  <th>Total Cases</th>
                   <th>Active</th>
                   <th>Recovered</th>
                   <th>Death</th>
@@ -58,10 +59,11 @@ export default class World extends Component {
                   return (
                     <tr>
                       <td>{itm.country}</td>
+                      <td className="text-end">{itm.todayCases}</td>
                       <td className="text-end">{itm.cases}</td>
-                      <td className="text-end">{itm.cases}</td>
-                      <td className="text-end">{itm.cases}</td>
-                      <td className="text-end">{itm.cases}</td>
+                      <td className="text-end">{itm.active}</td>
+                      <td className="text-end">{itm.recovered}</td>
+                      <td className="text-end">{itm.deaths}</td>
                     </tr>
                   );
                 })}
